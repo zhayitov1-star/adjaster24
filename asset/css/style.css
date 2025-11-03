@@ -26,20 +26,16 @@
     max-width: 1400px !important;
 }
 
-
-
 li {
     list-style: none;
     font-family: 'Mulish', serif;
 }
-
 
 span,
 a {
     text-decoration: none;
     font-family: "Mulish", serif;
 }
-
 
 h1,
 h2,
@@ -48,8 +44,9 @@ h4,
 h5,
 h6,
 p,
-a {
-    font-family: "Mulish", serif;
+a,
+.btn {
+    font-family: "Mulish", serif !important;
 }
 
 /* ============== HEADER & NAVIGATION ============== */
@@ -142,7 +139,7 @@ a {
 
 /* about */
 .about-company {
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .block-title h2 {
@@ -192,9 +189,6 @@ a {
 }
 
 /* services */
-.services {
-    margin-top: 100px;
-}
 
 .rectangle {
     z-index: -1;
@@ -211,6 +205,8 @@ a {
 
 .services-card {
     background: var(--primary);
+    transition: all 0.4s ease;
+    z-index: 1;
 }
 
 .services-card .card-body .card-text {
@@ -236,36 +232,29 @@ a {
     border: 2px solid white;
 }
 
-.services-card {
-    /* position: relative; */
-    transition: all 0.4s ease;
-    z-index: 1;
-}
-
 .services-card:hover {
     transform: translateY(-10px);
     z-index: 10;
+    box-shadow: 20px 0 15px -2px rgba(0, 0, 0, 0.3);
 }
 
 .services-card:hover .services-buttons {
     opacity: 1;
     bottom: -210px;
-      /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); */
+    box-shadow: 25px 0 15px -10px rgba(0, 0, 0, 0.3),
+        0 25px 15px -10px rgba(0, 0, 0, 0.3);
 }
 
-/* Tugmalar chiqish animatsiyasi */
 .services-buttons {
     background: var(--primary);
     transition: all .2s ease;
     bottom: 0;
     opacity: 0;
-
 }
-
 
 /* process */
 .process {
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .process-card {
@@ -342,7 +331,6 @@ a {
 
 /* advantages */
 .advantages {
-    margin-top: 100px;
     background: var(--bs-light-bg);
     padding-bottom: 100px;
 }
@@ -374,6 +362,11 @@ a {
     background: var(--primary);
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
+}
+
+.accordion-button.collapse {
+    border-bottom-left-radius: 16px !important;
+    border-bottom-right-radius: 16px !important;
 }
 
 .questions .accordion-button {
@@ -448,7 +441,7 @@ a {
 
 /* contact */
 .contact {
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .contact-text {
@@ -719,7 +712,7 @@ a {
         font-size: 25px;
     }
 
-    .process-card{
+    .process-card {
         margin-bottom: 50px;
     }
 
