@@ -1,0 +1,796 @@
+/* ============== FONT IMPORT ============== */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* ============== RESET & BASE ============== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: rgba(27, 59, 118, 1);
+    --primary-light: rgba(1, 133, 255, 1);
+    --primary-alt: rgba(1, 132, 255, 1);
+    --danger: rgba(255, 0, 36, 1);
+    --danger-dark: rgba(211, 48, 51, 1);
+    --text-dark: rgba(0, 0, 0, 1);
+    --text-muted: rgba(117, 117, 117, 1);
+    --text-strong: rgba(44, 62, 80, 1);
+    --white-80: rgba(255, 255, 255, 0.8);
+    --white-70: rgba(255, 255, 255, 0.7);
+    --bs-light-bg: rgba(248, 249, 250, 1);
+}
+
+.container {
+    max-width: 1400px !important;
+}
+
+
+
+li {
+    list-style: none;
+    font-family: 'Mulish', serif;
+}
+
+
+span,
+a {
+    text-decoration: none;
+    font-family: "Mulish", serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: "Mulish", serif;
+}
+
+/* ============== HEADER & NAVIGATION ============== */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    box-shadow: var(--box-shadow-menu);
+}
+
+.navbar-nav .nav-item a {
+    color: var(--primary);
+    font-size: 18px;
+}
+
+.dropdown-language button {
+    color: var(--primary-light);
+    border: 2px solid var(--primary-light);
+}
+
+.dropdown-language button:hover {
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+/* Hero */
+.hero-content::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(11, 64, 127, 1) 0%, rgba(20, 115, 229, 0) 100%);
+    z-index: 2;
+    /* gradient rasmning ustida */
+}
+
+.hero-text {
+    padding-left: 90px;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    font-weight: 900;
+    width: 75%;
+}
+
+.hero-text p {
+    font-size: 25px;
+    width: 75%;
+}
+
+.btn-consult,
+.btn-detail,
+.btn-services-detail,
+.offers-button,
+.form-button button {
+    background: var(--primary-light);
+    border: 2px solid var(--primary-light);
+    font-size: 24px;
+}
+
+.btn-consult:hover {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.btn-services {
+    border: 2px solid rgba(255, 255, 255, 1);
+    font-size: 24px;
+}
+
+.btn-services:hover,
+.services-buttons .btn-services:hover {
+    border: 2px solid var(--primary-light);
+    background: var(--primary-light);
+}
+
+.swiper-pagination-bullet {
+    width: 17px !important;
+    height: 17px !important;
+    background: transparent;
+    border: 3px solid #fff !important;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: white;
+}
+
+/* about */
+.about-company {
+    margin-top: 100px;
+}
+
+.block-title h2 {
+    font-size: 70px;
+    color: var(--text-dark);
+    font-weight: 800;
+}
+
+.about-img {
+    height: 600px;
+    width: 600px;
+}
+
+.stat-card {
+    border: 3px solid var(--primary-alt);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 50%;
+}
+
+.stat-value {
+    font-size: 70px;
+    color: var(--primary-alt);
+    font-weight: 900;
+}
+
+.stat-label {
+    font-size: 20px;
+}
+
+.about-buttons a {
+    width: 50%;
+}
+
+.btn-detail:hover {
+    background: transparent;
+    color: var(--primary-light) !important;
+    border: 2px solid var(--primary-light);
+}
+
+.about-buttons .btn-services {
+    background: var(--danger);
+    border: 2px solid var(--danger);
+}
+
+.about-text p {
+    font-size: 20px;
+}
+
+/* services */
+.services {
+    margin-top: 100px;
+}
+
+.rectangle {
+    z-index: -1;
+}
+
+.block-title .block-description {
+    font-size: 30px;
+    color: var(--primary);
+}
+
+.services-card .card-body h3 {
+    font-size: 30px;
+}
+
+.services-card {
+    background: var(--primary);
+}
+
+.services-card .card-body .card-text {
+    font-size: 18px;
+}
+
+.btn-services-detail {
+    color: #fff;
+}
+
+.services-button {
+    margin-bottom: 90px;
+}
+
+.btn-services-detail:hover {
+    background: transparent;
+    border: 2px solid var(--primary-light);
+    color: var(--primary-light) !important;
+}
+
+.services-buttons .btn-services {
+    background: transparent;
+    border: 2px solid white;
+}
+
+.services-card {
+    /* position: relative; */
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+
+.services-card:hover {
+    transform: translateY(-10px);
+    z-index: 10;
+}
+
+.services-card:hover .services-buttons {
+    opacity: 1;
+    bottom: -210px;
+      /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); */
+}
+
+/* Tugmalar chiqish animatsiyasi */
+.services-buttons {
+    background: var(--primary);
+    transition: all .2s ease;
+    bottom: 0;
+    opacity: 0;
+
+}
+
+
+/* process */
+.process {
+    margin-top: 100px;
+}
+
+.process-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(1, 133, 255, 0.4) 100%);
+}
+
+.process .block-text {
+    margin-bottom: 100px
+}
+
+.process-line {
+    margin-bottom: 50px;
+}
+
+.process-img {
+    width: 114px;
+    height: 114px;
+    background: var(--primary-light);
+    margin-top: -62px;
+}
+
+.process-card .card-body h3 {
+    font-size: 26px;
+    color: var(--primary);
+}
+
+.process-card .card-body .card-text {
+    font-size: 18px;
+}
+
+.process-card::after,
+.process-card::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: var(--primary-light);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.process-card::before {
+    left: -20px;
+}
+
+.process-card::after {
+    right: -20px;
+}
+
+.before-none::before,
+.after-none::after {
+    content: none;
+}
+
+
+.process-after::after,
+.process-before::after {
+    content: "";
+    width: 75%;
+    height: 2px;
+    background: var(--primary-light);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -1;
+}
+
+
+.process-before::after {
+    left: 0 !important;
+    width: 60% !important;
+}
+
+/* advantages */
+.advantages {
+    margin-top: 100px;
+    background: var(--bs-light-bg);
+    padding-bottom: 100px;
+}
+
+.advantages-card {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.advantages-card-img {
+    width: 88px;
+    height: 88px;
+    background: var(--primary);
+}
+
+.advantages-card .card-body h3,
+.emergency-card .card-body h3 {
+    color: var(--primary);
+}
+
+/* questions */
+.accordion-button {
+    background: var(--primary);
+    border-radius: 16px !important;
+    transition: all 0.2s ease;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: var(--primary);
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.questions .accordion-button {
+    font-size: 30px;
+}
+
+.questions .accordion-body {
+    background: var(--primary);
+}
+
+/* emergency */
+.emergency {
+    margin-top: 100px;
+    background: var(--danger);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.emergency .block-text .block-title h2 {
+    font-size: 60px;
+}
+
+.emergency-phone h1 {
+    font-size: 50px;
+}
+
+.emergency-position-img {
+    position: absolute;
+    bottom: -70px !important;
+    filter: blur(10px);
+}
+
+.mb-n5 {
+    margin-bottom: -30px;
+}
+
+.emergency-card .card-body .card-text {
+    font-size: 18px;
+}
+
+/* offers */
+.offers {
+    margin: 100px auto;
+}
+
+.offers-card {
+    background: var(--primary);
+}
+
+.offers-card h5 {
+    font-size: 40px;
+}
+
+.offers-card p {
+    font-size: 30px;
+}
+
+.offers-button:hover {
+    background: transparent;
+    border: 2px solid var(--primary-light);
+}
+
+/* mobile-app */
+.mobile-app {
+    background: var(--bs-light-bg);
+}
+
+.mobile-app .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* contact */
+.contact {
+    margin-top: 100px;
+}
+
+.contact-text {
+    background: var(--primary);
+}
+
+.contact-phone img {
+    width: 110px;
+}
+
+.location-street h3 {
+    font-size: 30px;
+}
+
+.contact-form {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.contact-label {
+    font-size: 20px;
+}
+
+.contact-label span {
+    color: var(--primary-alt);
+}
+
+.contact-phone,
+.contact-email {
+    font-size: 30px;
+}
+
+.contact-location h2 {
+    font-size: 35px;
+}
+
+.contact-input,
+.contact-selection,
+.contact-textarea {
+    border: 2px solid rgba(224, 224, 224, 1);
+}
+
+.contact-input::placeholder,
+.contact-selection .selection-option,
+.contact-textarea::placeholder {
+    font-size: 18px;
+    color: var(--text-muted);
+}
+
+.form-button button:hover {
+    background: transparent;
+    border: 2px solid var(--primary-light);
+    color: var(--primary-light) !important;
+}
+
+.contact-positon-top {
+    top: -125px;
+    right: 0;
+}
+
+.contact-position-bottom {
+    bottom: -150px;
+    left: -40px;
+}
+
+/* footer */
+.footer {
+    padding-top: 100px;
+    margin-top: 100px;
+    background: var(--text-strong);
+}
+
+.footer-description {
+    font-size: 18px;
+}
+
+.footer-title {
+    font-size: 22px;
+}
+
+.list-unstyled li a {
+    color: var(--white-80);
+}
+
+.list-unstyled li a:hover {
+    color: var(--white-70);
+}
+
+.footer-copyright a {
+    font-size: 18px;
+    color: var(--white-70);
+}
+
+.footer-icons a {
+    width: 52px;
+    height: 52px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.footer-icons a i {
+    color: var(--text-strong);
+    font-size: 45px;
+}
+
+
+
+
+
+/* form-container */
+
+.form-container .hero-content .hero-text h1 {
+    font-size: 50px;
+}
+
+.calkulate-button {
+    background: rgba(245, 245, 245, 1);
+    border: 1px solid rgba(204, 204, 204, 1);
+}
+
+.calkulate-button button {
+    font-size: 24px;
+    color: var(--primary);
+}
+
+.calkulate-button .nav-tabs .nav-link.active {
+    background: var(--primary) !important;
+    color: white;
+}
+
+.cakulate-insuranse {
+    /* background:rgba(255, 255, 255, 1); */
+    border: 1px solid rgba(224, 224, 224, 1);
+    backdrop-filter: blur(200px);
+}
+
+
+
+@media (max-width: 1400px) {
+
+    .navbar-collapse {
+        transition: 0.2s ease;
+        order: 3;
+    }
+
+    .navbar-collapse.collapsing {
+        transition: none !important;
+    }
+
+    .navbar-collapse.collapse.show {
+        background: #fff !important;
+        height: 90vh !important;
+    }
+
+    .hero-text h1 {
+        font-size: 58px;
+    }
+
+    .hero-text {
+        padding-left: 70px;
+    }
+
+    .stat-value {
+        font-size: 45px;
+        font-weight: 800;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .btn-services,
+    .btn-detail,
+    .stat-label,
+    .about-text p {
+        font-size: 18px;
+    }
+
+    .stat-value {
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .hero-text h1,
+    .form-container .hero-content .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-text p,
+    .offers-card p,
+    .questions .accordion-button {
+        font-size: 20px;
+    }
+
+    .btn-consult,
+    .btn-services,
+    .calkulate-button button {
+        font-size: 18px;
+    }
+
+    .offers-card h5,
+    .emergency-phone h1 {
+        font-size: 30px;
+    }
+
+    .process-before::after,
+    .process-after::after,
+    .process-card::after,
+    .process-card::before {
+        content: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-text {
+        padding-left: 40px;
+        width: auto;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+        width: auto;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .btn-consult,
+    .btn-services,
+    .calkulate-button button {
+        font-size: 16px;
+    }
+
+    .block-title h2 {
+        font-size: 50px;
+    }
+
+    .emergency .block-text .block-title h2 {
+        font-size: 40px;
+    }
+
+
+    .about-company,
+    .services {
+        margin-top: 60px;
+    }
+
+    .rectangle {
+        width: 100%;
+    }
+
+    .emergency-phone img {
+        width: 100px;
+    }
+
+    .mobile-app .container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .location-street h3,
+    .contact-location h2,
+    .contact-phone,
+    .contact-email {
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 150px;
+    }
+
+    .stat-card,
+    .about-buttons a,
+    .emergency-img,
+    .emergency-position-img,
+    .contact-position-bottom {
+        width: 100%;
+    }
+
+    .btn-services,
+    .btn-detail,
+    .about-text p,
+    .mobile-app .block-title p {
+        font-size: 16px;
+    }
+
+    .block-title h2,
+    .emergency .block-text .block-title h2 {
+        font-size: 35px;
+    }
+
+    .block-title .block-description,
+    .contact-phone,
+    .contact-email,
+    .location-street h3 {
+        font-size: 20px;
+    }
+
+
+    .questions .accordion-button,
+    .offers-button,
+    .emergency-phone h1,
+    .form-button button {
+        font-size: 18px;
+    }
+
+    .mobile-app-links a {
+        width: 50%;
+    }
+
+    .mobile-app .container {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    .mobile-app .block-title h2 {
+        font-size: 18px;
+    }
+
+    .footer-description {
+        font-size: 16px;
+    }
+
+    .footer-copyright a {
+        font-size: 12px;
+    }
+
+    .calkulate-button {
+        background: none;
+        border: none;
+    }
+
+
+    .calkulate-button .nav-tabs .nav-link {
+        background: var(--primary) !important;
+        color: white;
+    }
+
+}

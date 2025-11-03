@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjaster form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+    <header id="myHeader" role="banner">
+        <nav class="navbar navbar-expand-xxl bg-white mb-5">
+            <div class="container ">
+                <a class="navbar-brand me-0" href="#"><img src="asset/image/logo.svg" alt=""></a>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContents">
+                    <ul class="navbar-nav gap-xxl-4 w-100 justify-content-center">
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" href="#">Kompaniya haqida</a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" href="#">Xizmatlar</a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" href="#">E-polis rasmiylashtirish</a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" href="#">YTX bo‘yicha xabar berish</a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" href="#">Bog‘lanish</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar-xl-nav z-3 d-flex align-items-center gap-3">
+
+                    <button class="navbar-toggler p-0 border-0 order-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContents" aria-controls="navbarSupportedContents"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="dropdown-language dropdown ">
+                        <button class="btn rounded-pill d-flex px-1 align-items-center gap-2 fw-normal dropdown-toggle"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="asset/image/language-uz.svg" class="ms-1" alt=""> Uz
+                            <i class="bx bx-sm bx-chevron-down fw-normal"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><img src="asset/image/language-uz.svg" alt=""> Ru</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><img src="asset/image/language-uz.svg" alt=""> En</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero-section">
+            <div class="container form-container">
+                <div class="hero-content h-100 rounded-5 p-4 ps-5 z-2 position-relative overflow-hidden">
+                    <img src="asset/image/form-header-img.svg"
+                        class="hero-img w-100 position-absolute z-1 top-0 start-0" alt="">
+                    <div
+                        class="hero-text p-0 z-3 rounded-5 gap-2 text-white col-xxl-8 col-xl-10 col-12 d-flex flex-column justify-content-center position-relative">
+                        <h1 class=" fw-900 w-100">Zararni baholash xizmati</h1>
+                        <p class="fw-medium mb-0">Avtomobil zararini professional baholash uchun buyurtma qoldiring</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="services position-relative" style="padding: 100px 0;">
+            <img src="asset/image/rectangle.svg" class="rectangle position-absolute top-0 end-0 " alt="">
+            <div class="container z-3">
+                <div class="cakulate-insuranse d-flex flex-column justify-content-center rounded-5 px-3 px-lg-0 py-5">
+                    <div class="row justify-content-center">
+                        <div class="calkulate-button p-0 col-xxl-8 col-lg-10 col-12 rounded-pill">
+                            <div class="nav nav-tabs d-flex justify-content-sm-between justify-content-center border-0"
+                                id="nav-tab" role="tablist">
+                                <button
+                                    class="nav-link border-0 bg-transparent fw-bold rounded-pill w-auto px-sm-2 px-4 px-md-4 mb-3 mb-sm-0 active"
+                                    id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+                                    role="tab" aria-controls="nav-home" aria-selected="true">Jismoniy va yuridik
+                                    shaxslar uchun
+                                </button>
+
+                                <button
+                                    class="nav-link border-0 bg-transparent fw-bold rounded-pill w-auto px-sm-2 px-4 px-md-4 "
+                                    id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Sug‘urta
+                                    kompaniyalari uchun
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-content text-center" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab" tabindex="0">
+                            <form action="">
+                                <div class="row justify-content-center mt-sm-5 mt-3">
+
+                                    <div class=" col-lg-5 col-sm-6 col-12   mb-4 text-start">
+                                        <label for="basic-url" class="contact-label form-label fw-normal">Ismingiz
+                                            <span>*</span></label>
+                                        <input type="text" class="contact-input form-control py-3 rounded-3"
+                                            placeholder="To‘liq ismingiz" aria-label="To‘liq ismingiz"
+                                            aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="col-lg-5 col-sm-6 col-12   mb-4 text-start">
+                                        <label for="basic-url" class="contact-label form-label fw-normal">Telefon
+                                            <span>*</span></label>
+                                        <input type="text" class="contact-input form-control py-3 rounded-3"
+                                            placeholder="+998 __ ___ __ __" aria-label="Phone number"
+                                            aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="col-lg-5 col-sm-6 col-12   mb-4 text-start">
+                                        <label for="exampleFormControlTextarea1"
+                                            class="contact-label form-label fw-normal">Viloyat
+                                            <span>*</span></label>
+                                        <select class="contact-selection form-select py-3 rounded-3"
+                                            aria-label="Default select example">
+                                            <option selected class="selection-option text-black">Tanlang...
+                                            </option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-5 col-sm-6 col-12   mb-4 text-start">
+                                        <label for="exampleFormControlInput1"
+                                            class="contact-label form-label fw-normal">Avtomobil marka va model
+                                            <span>*</span></label>
+                                        <input type="text" class="contact-input form-control py-3 rounded-3"
+                                            id="exampleFormControlInput1" placeholder="Masalan: Chevrolet Cobalt 2020">
+                                    </div>
+
+                                    <div class="col-lg-5 col-sm-6 col-12   mb-4 text-start">
+                                        <label for="exampleFormControlInput1"
+                                            class="contact-label form-label fw-normal">Avtomobil davlat raqami
+                                            <span>*</span></label>
+                                        <input type="text" class="contact-input form-control py-3 rounded-3"
+                                            id="exampleFormControlInput1" placeholder="01  A  123  BC">
+                                    </div>
+                                    <div class="col-lg-5 col-sm-6 col-12  "></div>
+                                    <div class="form-button w-50 d-flex flex-column align-items-center">
+                                        <button type="submit"
+                                            class="btn fw-bolder text-white rounded-pill py-2 px-4">Yuborish</button>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                            tabindex="0">
+                            <form action="">
+                                <div class="row justify-content-center mt-sm-5 mt-3">
+
+                                    <div class=" col-lg-5 col-sm-6 col-12   mb-4 text-start">
+                                        <label for="basic-url" class="contact-label form-label fw-normal">Ismingiz
+                                            <span>*</span></label>
+                                        <input type="text" class="contact-input form-control py-3 rounded-3"
+                                            placeholder="To‘liq ismingiz" aria-label="To‘liq ismingiz"
+                                            aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="col-lg-5 col-sm-6 col-12   mb-4 text-start">
+                                        <label for="basic-url" class="contact-label form-label fw-normal">Telefon
+                                            <span>*</span></label>
+                                        <input type="text" class="contact-input form-control py-3 rounded-3"
+                                            placeholder="+998 __ ___ __ __" aria-label="Phone number"
+                                            aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="col-lg-5 col-sm-6 col-12   mb-4 text-start">
+                                        <label for="exampleFormControlTextarea1"
+                                            class="contact-label form-label fw-normal">Viloyat
+                                            <span>*</span></label>
+                                        <select class="contact-selection form-select py-3 rounded-3"
+                                            aria-label="Default select example">
+                                            <option selected class="selection-option text-black">Tanlang...
+                                            </option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-5 col-sm-6 col-12   mb-4 text-start">
+                                        <label for="exampleFormControlInput1"
+                                            class="contact-label form-label fw-normal">Avtomobil marka va model
+                                            <span>*</span></label>
+                                        <input type="text" class="contact-input form-control py-3 rounded-3"
+                                            id="exampleFormControlInput1" placeholder="Masalan: Chevrolet Cobalt 2020">
+                                    </div>
+
+                                    <div class="col-lg-5 col-sm-6 col-12   mb-4 text-start">
+                                        <label for="exampleFormControlInput1"
+                                            class="contact-label form-label fw-normal">Avtomobil davlat raqami
+                                            <span>*</span></label>
+                                        <input type="text" class="contact-input form-control py-3 rounded-3"
+                                            id="exampleFormControlInput1" placeholder="01  A  123  BC">
+                                    </div>
+                                    <div class="col-lg-5 col-sm-6 col-12  "></div>
+                                    <div class="form-button w-50 d-flex flex-column align-items-center">
+                                        <button type="submit"
+                                            class="btn fw-bolder text-white rounded-pill py-2 px-4">Yuborish</button>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="asset/image/rectangle-bottom.svg" class="rectangle  position-absolute bottom-0 start-0" alt="">
+        </section>
+
+
+        <section class="services">
+            <div class="container z-3">
+                <div class="block-text">
+                    <div class="block-title text-center mb-md-5 mb-3">
+                        <h2 class="text-uppercase">O‘xshash Xizmatlar</h2>
+                    </div>
+                </div>
+
+                <div class="row gy-4 align-items-stretch">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card rounded-5 border-0 services-card text-center text-white h-100">
+                            <div class="services-card-img d-flex justify-content-center">
+                                <img src="asset/image/services-auto.svg" class="card- w-auto" alt="...">
+                            </div>
+                            <div class="card-body mb-4 text-center text-white">
+                                <h3 class="fw-bold mb-3">YTX haqida xabarnoma</h3>
+                                <p class="card-text  fw-normal">YTHda ishtirok etgan tomonlar o‘rtasida xabarnoma
+                                    tuzish</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card rounded-5 border-0 services-card text-center text-white h-100">
+                            <div class="services-card-img d-flex justify-content-center">
+                                <img src="asset/image/services-evacuator.svg" class="card- w-100" alt="...">
+                            </div>
+                            <div class="card-body mb-4 text-center text-white">
+                                <h3 class="fw-bold mb-3">Evakuator xizmati</h3>
+                                <p class="card-text  fw-normal">Transport vositasini YTH joyidan olib chiqish</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card rounded-5 border-0 services-card text-center text-white h-100">
+                            <div class="services-card-img d-flex justify-content-center">
+                                <img src="asset/image/services-document.svg" class="card- w-auto" alt="...">
+                            </div>
+                            <div class="card-body mb-4 text-center text-white">
+                                <h3 class="fw-bold mb-3">YTX hujjatlari</h3>
+                                <p class="card-text  fw-normal">YTHdan so‘ng hujjatlarni to‘g‘ri rasmiylashtirishda
+                                    ko‘maklashish</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card rounded-5 border-0 services-card text-center text-white h-100">
+                            <div class="services-card-img d-flex justify-content-center">
+                                <img src="asset/image/services-time.svg" class="card- w-auto" alt="...">
+                            </div>
+                            <div class="card-body mb-4 text-center text-white">
+                                <h3 class="fw-bold mb-3">24/7 texnik yordam</h3>
+                                <p class="card-text  fw-normal">Yo‘llarda avto transport uchun favqulotda texnik
+                                    yordam ko‘rsatish</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card rounded-5 border-0 services-card text-center text-white h-100">
+                            <div class="services-card-img d-flex justify-content-center">
+                                <img src="asset/image/services-konsult.svg" class="card- w-auto" alt="...">
+                            </div>
+                            <div class="card-body mb-4 text-center text-white">
+                                <h3 class="fw-bold mb-3">Yuridik konsultatsiya</h3>
+                                <p class="card-text  fw-normal">YTH va boshqa huquqiy masalalar bo‘yicha maslahat
+                                    berish</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="mobile-app position-relative overflow-hidden" style="margin-top: 100px;">
+            <!-- O‘ng tomonda joylashgan rasm -->
+            <img src="asset/image/mobile-app-bg.svg"
+                class="position-absolute h-100 top-50 end-0 translate-middle-y img-fluid mobile-app-img"
+                alt="Mobil ilova rasmi">
+            <div class="container position-relative">
+                <div class="block-text">
+                    <div class="block-title text-center mb-md-5 mb-3">
+                        <h2 class="text-uppercase">Mobil ilovamizni yuklab olingr</h2>
+                        <p class="block-description fw-semibold">Barcha xizmatlar bir ilovada - tez, qulay va xavfsiz
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mobile-app-links w-100 d-flex align-items-center justify-content-center gap-4">
+                    <a href="" class=""><img src="asset/image/mobile-google.svg" class="w-100" alt=""></a>
+                    <a href="" class=""><img src="asset/image/mobile-store.svg" class="w-100"></a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact position-relative">
+            <img src="asset/image/contact-positon-top.svg" class="contact-positon-top position-absolute" alt="">
+            <img src="asset/image/contact-position-bottom.svg" class="contact-position-bottom position-absolute" alt="">
+            <div class="container position-relative">
+                <div class="block-text">
+                    <div class="block-title text-center mb-md-5 mb-3">
+                        <h2 class="text-uppercase">Bog‘lanish</h2>
+                        <p class="block-description fw-semibold">Biz bilan bog‘laning - 24/7 xizmatda</p>
+                    </div>
+                </div>
+
+                <div class="row gy-4 align-items-stretch">
+                    <div class="col-xl-6 col-lg-7 col-12">
+                        <div class="contact-text h-100 rounded-5 p-5 ps-3 pe-3  ps-xl-5">
+                            <div
+                                class="contact-phone mb-lg-4 d-flex align-items-center text-center text-sm-start justify-content-center justify-content-sm-start mb-4">
+                                <img src="asset/image/emergency-phone.svg" class="contact-bdy-img d-none d-sm-block"
+                                    alt="">
+                                <div class="ms-sm-5 gap-2">
+                                    <h2 class="fw-midium text-white">+998 78 120 0007</h2>
+                                    <h2 class="fw-midium text-white">+998 77 095 0007</h2>
+                                </div>
+                            </div>
+
+                            <div
+                                class="contact-email mb- d-flex align-items-center text-center text-sm-start justify-content-center justify-content-sm-start mb-4">
+                                <img src="asset/image/email.svg" class="contact-bdy-img d-none d-sm-block" alt="">
+                                <div class="ms-sm-4 gap-2">
+                                    <h2 class="fw-midium text-white">info@adjaster.uz</h2>
+                                    <h2 class="fw-midium text-white">support@adjaster24.uz</h2>
+                                </div>
+                            </div>
+                            <div class="contact-location mb-">
+                                <div
+                                    class="d-flex align-items-center text-center text-sm-start justify-content-center justify-content-sm-start mb-4">
+                                    <img src="asset/image/contact-location.svg"
+                                        class="contact-bdy-img d-none d-sm-block" alt="">
+                                    <div class="ms-sm-4 gap-2">
+                                        <h2 class="fw-bold text-uppercase text-white">Bizning manzillar</h2>
+                                    </div>
+                                </div>
+
+                                <div class="location-street d-flex align-items-center px-xl-4 mb-4">
+                                    <img src="asset/image/street-location.svg" class="me-4" alt="">
+                                    <h3 class="fw-normal text-white">Toshkent sh., Sofdil ko‘chasi, 40-uy (100000)</h3>
+                                </div>
+
+                                <div class="location-street d-flex align-items-center px-xl-4 mb-4">
+                                    <img src="asset/image/street-location.svg" class="me-4" alt="">
+                                    <h3 class="fw-normal text-white">Toshkent sh., Chilonzor tumani, 2-uy, 69-uy</h3>
+                                </div>
+
+                                <div class="location-street d-flex align-items-center px-xl-4 mb-4">
+                                    <img src="asset/image/street-location.svg" class="me-4" alt="">
+                                    <h3 class="fw-normal text-white">Toshkent sh., Mirobod tumani, Yangi Quyliq
+                                        ko‘chasi, 3-uy</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-xl-6 col-12">
+                        <div class="contact-form bg-white h-100 rounded-5 p-5 px-3 px-sm-5">
+                            <form action="">
+                                <div class="mb-4">
+                                    <label for="basic-url" class="contact-label form-label fw-normal">Ismingiz
+                                        <span>*</span></label>
+                                    <input type="text" class="contact-input form-control py-3 rounded-3"
+                                        placeholder="To‘liq ismingiz" aria-label="To‘liq ismingiz"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="basic-url" class="contact-label form-label fw-normal">Telefon
+                                        <span>*</span></label>
+                                    <input type="text" class="contact-input form-control py-3 rounded-3"
+                                        placeholder="+998 __ ___ __ __" aria-label="Phone number"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="exampleFormControlInput1"
+                                        class="contact-label form-label fw-normal">Email
+                                        <span>*</span></label>
+                                    <input type="email" class="contact-input form-control py-3 rounded-3"
+                                        id="exampleFormControlInput1" placeholder="example@email.com">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="exampleFormControlTextarea1"
+                                        class="contact-label form-label fw-normal">Xizmat turi
+                                        <span>*</span></label>
+                                    <select class="contact-selection form-select py-3 rounded-3"
+                                        aria-label="Default select example">
+                                        <option selected class="selection-option text-black">Tanlang...</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="exampleFormControlTextarea1"
+                                        class="contact-label form-label fw-normal">Xabar <span>*</span></label>
+                                    <textarea class="contact-textarea form-control py-3 rounded-3"
+                                        id="exampleFormControlTextarea1" placeholder="Qanday yordam kerak?"
+                                        rows="5"></textarea>
+                                </div>
+                                <div class="form-button w-100 d-flex flex-column align-items-center">
+                                    <button type="submit"
+                                        class="btn fw-bolder text-white rounded-pill py-lg-3 py-2 w-50">Yuborish</button>
+
+                                </div>
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class=" ">
+        <section class="footer text-white pt-5 pb-3">
+            <div class="container">
+                <div class="row gy-4 justify-content-lg-between">
+                    <!-- Logo va tavsif -->
+                    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 col-12">
+                        <img src="asset/image/footer-logo.svg" alt="Adjaster.uz" class="mb-3" style="max-width: 200px;">
+                        <p class="footer-description fw-normal mb-4">
+                            <strong class="fw-bold">Adjaster.uz</strong> Yevropa avtohalokatlari haqida hisobotlarni
+                            tayyorlashda sizning
+                            ishonchli yordamchingizdir.
+                            Biz baxtsiz hodisani hal qilish jarayonini sodda va qulay qilamiz.
+                            Qo‘shimcha ma’lumot olish uchun bugun biz bilan bog‘laning!
+                        </p>
+                        <div class="footer-icons d-flex gap-3 mt-3">
+                            <a href="#" class="d-flex align-items-center justify-content-center "><i
+                                    class='bx bxl-facebook'></i></a>
+                            <a href="#" class="d-flex align-items-center justify-content-center "><i
+                                    class='bx bxl-instagram'></i></a>
+                            <a href="#" class="d-flex align-items-center justify-content-center "><i
+                                    class='bx bxl-telegram'></i></a>
+                            <a href="#" class="d-flex align-items-center justify-content-center "><i
+                                    class='bx bxl-youtube'></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Tezkor havolalar -->
+                    <div class="col-xl-2 col-md-3 col-sm-4 col-12">
+                        <h5 class="mb-3 fw-bold footer-title">Tezkor havolalar</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="fw-normal d-block mb-2">Kompaniya haqida</a>
+                            </li>
+                            <li><a href="#" class="fw-normal d-block mb-2">Xizmatlar</a></li>
+                            <li><a href="#" class="fw-normal d-block mb-2">E-polis</a></li>
+                            <li><a href="#" class="fw-normal d-block mb-2">Maxfiylik siyosati</a>
+                            </li>
+                            <li><a href="#" class="fw-normal d-block mb-2">Foydalanish
+                                    shartlari</a>
+                            </li>
+                            <li><a href="#" class="fw-normal d-block mb-2">Ommaviy oferta</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Xizmatlar -->
+                    <div class="col-lg-2 col-md-3 col-sm-8 col-12">
+                        <h5 class="mb-3 fw-bold footer-title">Xizmatlar</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="fw-normal d-block mb-2">Avtomobil
+                                    sug‘urtasi</a>
+                            </li>
+                            <li><a href="#" class="fw-normal d-block mb-2">Mulk sug‘urtasi</a>
+                            </li>
+                            <li><a href="#" class="fw-normal d-block mb-2">Biznes sug‘urtasi</a>
+                            </li>
+                            <li><a href="#" class="fw-normal d-block mb-2">Tibbiy sug‘urta</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Filiallarimiz -->
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-12">
+                        <h5 class="mb-3 fw-bold footer-title">Filiallarimiz</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="fw-normal d-block mb-2">Andijon viloyati</a>
+                            </li>
+                            <li><a href="#" class="fw-normal d-block mb-2">Farg‘ona viloyati</a>
+                            </li>
+                            <li><a href="#" class="fw-normal d-block mb-2">Toshkent viloyati</a>
+                            </li>
+                            <li><a href="#" class="fw-normal d-block mb-2">Jizzax viloyati</a>
+                            </li>
+                            <li><a href="#" class="fw-normal d-block mb-2">Sirdaryo viloyati</a>
+                            </li>
+                            <li><a href="#" class="fw-normal d-block mb-2">Xorazm viloyati</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="border-secondary mx-3 my-4">
+
+            <div class="footer-copyright text-center">
+                <a class="fw-normal">
+                    © 2025 Adjaster.uz Barcha huquqlar himoyalangan.
+                </a>
+            </div>
+
+        </section>
+
+    </footer>
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+
+
+    <script src="asset/js/swiper-bundle.min.js"></script>
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/main.js"></script>
+</body>
+
+</html>
