@@ -719,6 +719,10 @@ a {
         font-size: 25px;
     }
 
+    .process-card{
+        margin-bottom: 50px;
+    }
+
 }
 
 @media (max-width: 576px) {
